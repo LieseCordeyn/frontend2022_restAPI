@@ -49,7 +49,7 @@ app.post('/recipes', async (req, res) => {
 
          //validation for double challenges 
          const myDoc = await coll.findOne({
-             recipe_id: req.body.recipe_id
+             id: req.body.recipe_id
          }); 
          // Find document 
          if (myDoc) {
